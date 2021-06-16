@@ -84,17 +84,65 @@ article {
 }
 
 .about-me-grid {
-    width: 70%;
+    width: 85%;
     display: grid;
     grid-template-columns: 1fr repeat(2, 3fr);
     grid-template-rows: repeat(4, 1fr);
     gap: 20px 20px;
 }
 
-.info-about-me {
-    padding-left: 15px;
-    grid-column-start: 2;
-    grid-column-end: span 3;
-    grid-row-start: 1;
-    grid-row-end:span 2;
+.info-about-me1 {
+    padding-left: 10px;
+    grid-column: 2 / span 3;
+    grid-row: 1 / span 2;
+}
+
+.info-about-me2 {
+    padding-left: 10px;
+    grid-column: 2 / span 3;
+    grid-row: 3 / span 4;
+}
+
+.about-me-siding {
+    display: block;
+    padding-top: 0px;
+    font-size: 35px;
+    grid-row: 1 / span 4;
+    padding-right: 10px;
+    text-align: right;
+    border-right: 2px solid
+}
+
+.work-flex {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    padding-top: 30px;
+}
+    
+.work-grid {
+    width: 85%;
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 2fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: 20px 20px;
+    color: blue;
+}
+
+.work-siding {
+    display: block;
+    padding-top: 0px;
+    font-size: 35px;
+    grid-row: 1 / span 4;
+    padding-right: 10px;
+    text-align: right;
+    border-right: 2px solid
+}
+
+.work-box1 a {
+    grid-column: 2 / span 3;
+    grid-row: 1 / span 6;
+    background-size: cover;
+    background-size: cover;
+    border: .25vw blue
 }
