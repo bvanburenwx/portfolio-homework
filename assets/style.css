@@ -1,4 +1,9 @@
 /* This starts the styles for my header and navigation bar */
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
 header {
     display: flex;
     justify-content: space-between;
@@ -10,11 +15,6 @@ header h1 {
     color: cyan
 }
 
-* {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-}
 header nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -69,6 +69,8 @@ body {
 .hero-message {
     padding-right: 30px;
     padding-bottom: 20px;
+    font-size: 30px;
+    color: ivory;
 }
 
 /* This begins the styling for my articles */
@@ -114,6 +116,28 @@ article {
     border-right: 2px solid
 }
 
+/* .work-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+}
+
+.work-siding {
+    width: 20%;
+    height: 20%;
+    position: relative;
+    padding-right: 30px;
+}
+
+.work-box1 {
+    width: 75%;
+    height: 100px;
+    margin-bottom: 2%;
+    background-image: url(./images/Horiseon.jpeg);
+    padding-right: 100px;
+} */
+
 .work-flex {
     display: flex;
     justify-content: space-between;
@@ -125,9 +149,9 @@ article {
     width: 85%;
     display: grid;
     grid-template-columns: 1fr repeat(3, 2fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 20px 20px;
+    gap: 10px 10px;
     color: blue;
+
 }
 
 .work-siding {
@@ -140,12 +164,54 @@ article {
     border-right: 2px solid
 }
 
-.work-box1 a {
-    grid-column: 2 / span 3;
+.work-boxes {
+    /* display: grid; */
+    display: flex;
+    flex-direction: column;
+    grid-column: 2 / span 3 ;
     grid-row: 1 / span 6;
-    background-size: cover;
-    background-size: cover;
+}
+
+.work-box1 {
+    width: 100%;
     border: .25vw blue
+}
+
+.work-box2, .work-box3 {
+    display: flex;
+}
+
+.sample-project1 {
+    background-image: url(./images/Horiseon.jpeg);
+    background-size: cover;
+    min-height: 200px;
+    min-width: 50%
+}
+
+.sample-project2 {
+    background-image: url(./images/993-640x360.jpeg);
+    background-size: cover;
+    min-height: 200px;
+    min-width: 50%
+}.sample-project3 {
+    background-image: url(./images/placeholder-image-1.jpeg);
+    background-size: cover;
+    min-height: 200px;
+    min-width: 50%
+}.sample-project4 {
+    background-image: url(./images/placeholder-image-2.jpeg);
+    background-size: cover;
+    min-height: 200px;
+    min-width: 50%
+}.sample-project5 {
+    background-image: url(./images/placeholder-image.jpeg);
+    background-size: cover;
+    min-height: 200px;
+    min-width: 50%
+}
+
+#work-projects {
+    min-height: calc(100vh - 620px); 
 }
 
 footer {
@@ -195,3 +261,16 @@ footer a {
 .github {
     grid-row: 2;
 }
+
+@media screen and (max-width: 992px) {
+    .work-box1 .work-box2 .work-box3 {
+      width: 50%;
+    }
+  }
+  
+  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .work-box1 .work-box2 .work-box3 {
+      width: 100%;
+    }
+  }
