@@ -147,10 +147,11 @@ article {
     
 .work-grid {
     width: 85%;
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr repeat(3, 2fr);
-    gap: 10px 10px;
+    gap: 10px 10px; */
     color: blue;
+    /* display: flex; */
 
 }
 
@@ -158,18 +159,21 @@ article {
     display: block;
     padding-top: 0px;
     font-size: 35px;
-    grid-row: 1 / span 4;
+    /* grid-row: 1 / span 4; */
     padding-right: 10px;
     text-align: right;
-    border-right: 2px solid
+    border-right: 2px solid;
+    width: 200px;
 }
 
 .work-boxes {
     /* display: grid; */
     display: flex;
-    flex-direction: column;
-    grid-column: 2 / span 3 ;
-    grid-row: 1 / span 6;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: calc(100vw - 250px);
+    /* grid-column: 2 / span 3 ;
+    grid-row: 1 / span 6; */
 }
 
 .work-box1 {
@@ -184,34 +188,36 @@ article {
 .sample-project1 {
     background-image: url(./images/Horiseon.jpeg);
     background-size: cover;
-    min-height: 200px;
-    min-width: 50%
+    height: 582px;
+    width: 100%;
 }
 
 .sample-project2 {
     background-image: url(./images/993-640x360.jpeg);
     background-size: cover;
     min-height: 200px;
-    min-width: 50%
+    width: 50%;
 }.sample-project3 {
     background-image: url(./images/placeholder-image-1.jpeg);
     background-size: cover;
     min-height: 200px;
-    min-width: 50%
+    width: 50%;
 }.sample-project4 {
     background-image: url(./images/placeholder-image-2.jpeg);
     background-size: cover;
     min-height: 200px;
-    min-width: 50%
+    width: 50%;
 }.sample-project5 {
     background-image: url(./images/placeholder-image.jpeg);
     background-size: cover;
     min-height: 200px;
-    min-width: 50%
+    width: 50%;
 }
 
 #work-projects {
     min-height: calc(100vh - 620px); 
+    display: flex;
+    flex-direction: row;
 }
 
 footer {
@@ -262,15 +268,40 @@ footer a {
     grid-row: 2;
 }
 
-@media screen and (max-width: 992px) {
-    .work-box1 .work-box2 .work-box3 {
+@media screen and (min-width: 992px) {
+    div.sm-image  {
       width: 50%;
+    }
+    /* div.sample-project3  {
+        width: 50%;
+    }
+    div.sample-project4  {
+        width: 50%;
+    }
+    div.sample-project5  {
+        width: 50%;
+    } */
+  }
+  /* sample-project3 .sample-project4 .sample-project5  */
+  
+  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 992px) {
+    div.sm-image  {
+      width: 100%;
+    }
+    /* div.sample-project3 {
+        width: 100%;
+    } */
+  }
+  /* .sample-project3 .sample-project4 .sample-project5  */
+
+/* @media screen and (min-width: 600px) {
+    div.example {
+      font-size: 80px;
     }
   }
   
-  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
-    .work-box1 .work-box2 .work-box3 {
-      width: 100%;
-    }
-  }
+    div.example {
+      font-size: 30px;
+    } */
