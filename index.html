@@ -1,104 +1,105 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Spectral:ital,wght@1,300&display=swap"
+    rel="stylesheet">
     <link rel="stylesheet" href="./assets/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Brandon Cody Van Buren</title>
 </head>
 <body>
-    <header>
-        <span>
-            <h1>Brandon Cody Van Buren</h1>
-        </span>
-        <nav>
-                <ul class="navigation-bar">
-                    <li>
-                        <a href="#about-me">About Me</a>
-                    </li>
-                    <li>
-                        <a href="#work-projects">Work</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact Me</a>
-                    </li>
-                    <li>
-                        <a href="#resume">Resume</a>
-                    </li>
-                </ul>
-        </nav>
-    </header>
-    <main>
-    <section class="website-hero">
-        <div class="hero-message">
-            <span class="span-background">Live Your Best Life</span>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand name">
+          <h1>Brandon Cody Van Buren</h1>
         </div>
-    </section>
-
-    <Article>
-        <div id="about-me" class="about-me-flex">
-            <div class="about-me-grid">
+        <figure class="image is-128x128 face-photo">
+            <img src="assets/images/Me.jpg">
+          </figure>
+          <div class="navbar-end nav-section">
+            <a class="navbar-item nav-link" href="#about-me">
+                About Me
+              </a>
+              <a class="navbar-item nav-link" href="#work-projects">
+                Work
+              </a>
+              <a class="navbar-item nav-link" href="#contact">
+                Contact Me
+              </a>
+              <a class="navbar-item nav-link" href="assets/images/Resume 080221.pages" download>
+                  Resume
+              </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <main class="main-flex-container">
+       
+        <section class="website-hero">
+            
+            <div class="hero-message">
+                <span class="span-background">Live Your Best Life</span>
+            </div>
+        </section>
+        <Article>
+            <div id="about-me" class="about-me-flex">
                 <div class="about-me-siding">
                     <p>About Me</p>
-        </div>
-        <div class="info-about-me1">
-            <p>My biggest drive in life is to help any and everyone. I have set myself up in a way
-                that I can help anyone by being compassionate, hardworking, and friendly to those in need. 
-            </p>
-        </div>
-        <div class="info-about-me2">
-            <p>I am currently working as a Program Delivery Manager for The Federal Emergency
-                Management Agency (FEMA). My role is to help government entities recover from 
-                major disasters across the US. 
-            </p>
-        </div>
-    </Article>
-     <!-- <section>
-        <div id="Work" class="work-flex-container">
-                <div class="work-siding">
+                </div>
+                 <div class="info-about-me1">
+                    <p>My biggest drive in life is to help any and everyone. I have set myself up in a way
+                    that I can help anyone by being compassionate, hardworking, and friendly to those in need. 
+                    </p>
+                </div>
+                <div class="info-about-me2">
+                    <p>I am currently working as a Program Delivery Manager for The Federal Emergency
+                    Management Agency (FEMA). My role is to help government entities recover from 
+                    major disasters across the US. 
+                    </p>
+                </div>
+        </Article>
+        <section>
+            <div id="work-projects" class="work-projects-flex">
+                <div class="work-projects-siding">
                     <p>Work</p>
                 </div>
-                <div class="work-box1">
+                <div class="project-images">
+                       <a href="https://bvanburenwx.github.io/Javascript-Password-Generator/"> <img src="assets/images/Javascript password generator.png" class="image-links">
+                       </a>
+                        <a href="https://bvanburenwx.github.io/Third-Party-APIs/"> <img src="assets/images/Workday scheduler.png" class="image-links2">
+                        </a>
+                        <a href="https://pamtheham.github.io/Sky-Gazer/"> <img src="assets/images/SkyGazer.png" class="image-links2">
+                        </a>
+                        <a href="https://bvanburenwx.github.io/Web-APIs-Code-Quiz/"> <img src="assets/images/Code Quiz.png" class="image-links2">
+                        </a>
+                    </div>
                 </div>
-    </section> -->
-    <section id="work-projects">
-        <!-- <div id="Work" class="work-flex"> -->
-            <!-- <div class="work-grid"> -->
-                <div class="work-siding">
-                    <p>Work</p>
-                </div>
-            <div class="work-boxes">
-                <div class="work-box1">
-                    <a href="https://github.com/bvanburenwx"> <div class="sample-project1"></div></a>
-                </div>
-                <!-- <div class="work-box2"> -->
-                    <div class="sample-project2  sm-image"></div>
-                    <div class="sample-project3  sm-image"></div>
-                <!-- </div> -->
-                <!-- <div class="work-box3"> -->
-                    <div class="sample-project4  sm-image"></div>
-                    <div class="sample-project5 sm-image"></div>
-                <!-- </div> -->
-                
-            </div>
-    </section>
-</main>
+        </section>
+    </main>
     <footer>
-        <div id="contact" class="contact-flex">
-            <div class="footer-grid">
-                <div class="footer-siding">
-                    <p>Contact Me</p>
-        </div>
-        <div class="phone-number">
-            <a href="tel:555-555-5555"> 555-555-5555</a>
-        </div>
-        <div class="email">
-            <a href="mailto:bvanburenwx@gmail.com"> Email </a>
-        </div>
-        <div class="github">
-            <a href="https://github.com/bvanburenwx"> Github</a>
-        </div>
+        <nav id="contact" class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand name">
+              <h1>Contact Me</h1>
+            </div>
+              <div class="navbar-end nav-section">
+                <a class="navbar-item foot-link" href="tel:769-226-3649">
+                    Phone
+                  </a>
+                  <a class="navbar-item foot-link" href="mailto:bvanburenwx@gmail.com">
+                    Email
+                  </a>
+                  <a class="navbar-item foot-link" href="https://github.com/bvanburenwx">
+                    Github
+                  </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
     </footer>
+
 </body>
 </html>
